@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: 100%;
+}
+main .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+main .hero-text .head-img {
+  width: 100%;
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+}
+main .hero-text .head-img img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: up-down 1s ease-out;
+  overflow: hidden;
+}
+main .hero-text .head-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .hero-text .head-text p {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+main .image-para {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+main .image-para .img-1 {
+  width: 100%;
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+}
+main .image-para .img-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: up-down 1s ease-out;
+  overflow: hidden;
+}
+main .image-para .text-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .image-para .text-1 h1 {
+  font-size: 3em;
+  font-weight: 350;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+main .image-para .text-1 p {
+  font-family: monospace;
+  width: 100%;
+  font-size: 1.6em;
+}
+main .image-para .text-1 .info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .image-para .text-1 .info h1 {
+  font-size: 2em;
+}
+main .vertical-line {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
+  aspect-ratio: 1/2;
+}
+main .vertical-line .imag-2 {
+  width: 100%;
+}
+main .vertical-line .imag-2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .vertical-line .line {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3em;
+  writing-mode: vertical-rl;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+main .vertical-line .line .line-2 {
+  writing-mode: initial;
+  font-size: 0.9em;
+}
+main .vertical-line .line .line-2 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1em;
+}
+main .vertical-line .line .line-2 p {
+  margin-top: 1em;
+  text-transform: none;
+  font-size: 1.7em;
+  line-height: 1.5em;
+  font-weight: 300;
+  opacity: 0.5;
+}
+main .services {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+main .services h2 {
+  font-size: 3em;
+  font-weight: 400;
+}
+main .services .about {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .services .about h3 {
+  font-size: 1.7em;
+  font-weight: 500;
+}
+main .services .about p {
+  font-size: 1.3em;
+  font-family: monospace;
+  line-height: 1.5em;
+  opacity: 0.5;
+}
+main .services .about .about-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+main .services .about .about-info .circle {
+  width: 40px;
+  border-radius: 50%;
+  background-color: black;
+  aspect-ratio: 1/1;
+}
+main .services .about .about-info h4 {
+  font-weight: 400;
+}
+main .services .imag-3 {
+  margin-top: 3em;
+  width: 100%;
+}
+main .services .imag-3 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .work .select {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+}
+main .work .select img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: up-down 1s ease-out;
+  overflow: hidden;
+}
+main .work .work-area .imag-4 {
+  width: 100%;
+}
+main .work .work-area .imag-4 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .work .work-area .imag-5 {
+  width: 100%;
+}
+main .work .work-area .imag-5 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+main .work .work-area .work-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .work .work-area .work-text h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+main .work .work-area .work-text p {
+  font-size: 1.5em;
+  font-family: monospace;
+}
+main .work .work-area .work-text .work-text-1 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+main .work .work-area .work-text .work-text-1 .circle {
+  width: 35px;
+  aspect-ratio: 1/1;
+  background-color: black;
+  border-radius: 50%;
+}
+main .work .work-area-2 .imag-4 {
+  width: 100%;
+}
+main .work .work-area-2 .imag-4 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .work .work-area-2 .imag-5 {
+  width: 100%;
+}
+main .work .work-area-2 .imag-5 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+main .work .work-area-2 .work-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .work .work-area-2 .work-text h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+main .work .work-area-2 .work-text p {
+  font-size: 1.5em;
+  font-family: monospace;
+}
+main .work .work-area-2 .work-text .work-text-1 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+main .work .work-area-2 .work-text .work-text-1 .circle {
+  width: 35px;
+  aspect-ratio: 1/1;
+  background-color: black;
+  border-radius: 50%;
+}
+main .client {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .client .image {
+  width: 100%;
+}
+main .client .image img {
+  width: 100%;
+}
+main .client .client-info .info p {
+  font-family: monospace;
+  font-size: 1.1em;
+  margin: 0.7em 0;
+}
+main .client .client-info .info h4 {
+  font-size: 2em;
+  font-weight: 400;
+}
+main .client .client-info hr {
+  margin: 1.6em 0;
+}
+main .team {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow: hidden;
+  perspective: 1000px;
+}
+main .team .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .team .top h1 {
+  font-size: 3.5em;
+  font-weight: 300;
+}
+main .team .top p {
+  font-family: monospace;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+main .team .bottom {
+  padding-top: 2em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .team .bottom .profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .team .bottom .profile h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+main .team .bottom .profile .image {
+  width: 100%;
+}
+main .team .bottom .profile .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .team .bottom .profile .profile-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+}
+main .team .bottom .profile .profile-info p {
+  font-family: monospace;
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+main .team .bottom .profile .profile-info .info-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+main .team .bottom .profile .para p {
+  font-family: monospace;
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+@keyframes up-down {
+  0% {
+    transform: translate3d(0, 200px, -30px);
+  }
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+footer .image {
+  width: 100%;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+}
+footer .image img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: up-down 1s ease-out;
+  overflow: hidden;
+}
+footer .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+footer .text h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+footer .text button {
+  border-radius: 2em;
+  font-size: 1.7em;
+  padding: 0.5em 1em;
+  font-family: monospace;
+}
+footer .copy {
+  margin: 2.5em 0;
+}
+footer .copy p {
+  margin-top: 1em;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+@media (min-width: 1080px) {
+  main {
+    width: 100%;
+    padding: 4rem;
+    gap: 3em;
+  }
+  main .image-para {
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 5em;
+  }
+  main .image-para .img-1 {
+    width: 50%;
+  }
+  main .image-para .img-1 img {
+    width: 100%;
+  }
+  main .image-para .text-1 {
+    width: 50%;
+  }
+  main .image-para .text-1 h1 {
+    font-size: 5em;
+    font-weight: 400;
+  }
+  main .image-para .text-1 p {
+    font-size: 1.9em;
+    opacity: 0.8;
+    margin-bottom: 2em;
+  }
+  main .vertical-line {
+    flex-direction: row;
+    aspect-ratio: 1/0;
+  }
+  main .vertical-line .imag-2 {
+    width: 33%;
+  }
+  main .vertical-line .imag-2 img {
+    width: 100%;
+  }
+  main .vertical-line .line {
+    width: 67%;
+    flex-direction: column;
+  }
+  main .vertical-line .line .line-2 {
+    padding: 2em;
+  }
+  main .vertical-line .line .line-2 h1 {
+    font-size: 6.5em;
+    font-weight: 100;
+  }
+  main .vertical-line .line .line-2 p {
+    padding-top: 2.2em;
+    width: 75%;
+  }
+  main .services {
+    flex-direction: row;
+  }
+  main .services .container {
+    width: 50%;
+    padding-top: 2em;
+  }
+  main .services .container h2 {
+    font-size: 5em;
+    width: 50%;
+    font-weight: 400;
+  }
+  main .services .container .about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  main .services .container .about-container .about {
+    width: 40%;
+  }
+  main .services .imag-3 {
+    width: 50%;
+    aspect-ratio: 1/1.2;
+    margin: 2rem;
+  }
+  main .services .imag-3 img {
+    height: 100%;
+  }
+  main .work {
+    gap: 4em;
+  }
+  main .work .work-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  main .work .work-area .imag-4 {
+    width: 33%;
+    aspect-ratio: 1/0;
+  }
+  main .work .work-area .imag-4 img {
+    display: initial;
+  }
+  main .work .work-area .imag-5 {
+    width: 33%;
+  }
+  main .work .work-area .imag-5 img {
+    display: initial;
+  }
+  main .work .work-area .work-text {
+    width: 33%;
+  }
+  main .work .work-area-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
+  main .work .work-area-2 .imag-4 {
+    width: 33%;
+  }
+  main .work .work-area-2 .imag-4 img {
+    display: initial;
+  }
+  main .work .work-area-2 .imag-5 {
+    width: 33%;
+  }
+  main .work .work-area-2 .imag-5 img {
+    display: initial;
+  }
+  main .work .work-area-2 .work-text {
+    width: 33%;
+  }
+  main .client {
+    width: 60%;
+    margin-left: 33em;
+  }
+  main .client .image {
+    width: 50%;
+  }
+  main .client .client-info .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+  main .client .client-info .info .year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+  main .team {
+    width: 100%;
+  }
+  main .team hr {
+    margin-top: 7em;
+  }
+  main .team .top {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  main .team .top h1 {
+    width: 50%;
+    font-size: 9em;
+    font-weight: 30;
+  }
+  main .team .top p {
+    width: 50%;
+    padding: 2.5em;
+    margin-top: 2.5em;
+  }
+  main .team .bottom {
+    width: 100%;
+    flex-direction: row;
+    gap: 2em;
+  }
+  main .team .bottom .profile {
+    width: 25%;
+  }
+  main .team .bottom .profile .image {
+    width: 100%;
+  }
+  main .team .bottom .profile .para {
+    margin-top: 2em;
+  }
+}
